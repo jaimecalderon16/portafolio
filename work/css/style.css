@@ -1,0 +1,293 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000B38;
+}
+
+body, html {
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    /* Estilo para la barra de scroll en Firefox */
+    scrollbar-color: #323c58 transparent; /* Color de la barra de scroll */
+    scrollbar-width: thin; 
+}
+
+@font-face {
+    font-family: 'Acorn';
+    src: url('../../font/acorn.woff') format("woff");
+  }
+
+#SetionGradient{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    top: 0;
+}
+.site{
+    padding: 3rem 0 0 0;
+}
+
+/*---------------------------------------------Setion Title--------------------*/
+#ContainerTitle h1 {
+    font-family: "Acorn", sans-serif;
+    font-size: 90px;
+  }
+
+#ContainerTitle{
+    position: relative;
+    z-index: 4;
+    padding: 3rem 10rem;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+strong {
+    color: #8FDCC2;
+  }
+
+p {
+    margin: 0;
+}
+
+/*-------------------------------------Gradientes------------------------*/
+.gradientAlfa{
+    height: 10rem;
+    width: 100%;
+    bottom: 8rem;
+    z-index: 2;
+    position: absolute;
+    background: linear-gradient(0deg, #020B38, #00000000);
+}
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*----------------------------------SEtion of Work--------------------------------*/
+
+#setionWork{
+    width: 90vw;
+    display: flex;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.containerWorks{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem ;
+}
+
+
+.containerWorksDesktop{
+    position: relative;
+    color: #344542;
+    border-radius: 64px;
+    text-align: right;
+    z-index: 3;
+    background-color: aquamarine;
+    width: 60%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.textWork{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.textWork h1{
+    font-family: "Acorn", sans-serif;
+    margin: 4px 0;
+}
+
+
+.containerWorksDesktop img{
+    transform: scale(0.8);
+    position: absolute;
+    left: -3rem;
+    top: 2.5rem;
+}
+
+
+
+.containerWorksMobile{
+    position: relative;
+    color: #344542;
+    border-radius: 64px;
+    text-align: right;
+    z-index: 3;
+    background-color: rgb(14, 219, 117);
+    width: 30%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.containerWorksDesktop a{
+    width: 100%;
+}
+
+.containerWorksMobile a{
+    width: 100%;
+} 
+
+.containerWorksMobile .mobileUi{
+    transform: scale(1);
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contornoPhone{
+    position: absolute;
+    transform: translateX(50%) scale(0.38) !important;
+    right: 50%;
+    top: -23.9rem !important;
+}
+
+.textWork p{
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.containerWorks:nth-child(2) .containerWorksDesktop{
+    background-color: #D990F2; 
+}
+
+.containerWorks:nth-child(2) .containerWorksMobile{
+    background-color:  #F0B695;
+}
+
+.containerWorks:nth-child(3) .containerWorksDesktop{
+    background-color: #0EDB75; 
+}
+
+.containerWorks:nth-child(3) .containerWorksMobile{
+    background-color:  #7FFFD4;
+}
+
+.containerWorks:nth-child(4) .containerWorksMobile{
+    background-color:  #B7E0FF;
+}
+
+
+.traslateEffectsDesktop{
+    transition: transform 0.3s ease;
+}
+
+.traslateEffectsMobile{
+    transition: transform 0.3s ease;
+}
+
+.HoverEffectWork:hover .traslateEffectsDesktop{
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.HoverEffectWork:hover .traslateEffectsMobile{
+    transform: translateY(13px);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------scroll Stily------------------*/
+
+/* Estilo para la barra de scroll en Webkit (Safari y Chrome) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Estilo para el botón en la barra de scroll en Webkit */
+  ::-webkit-scrollbar-thumb {
+    background-color: #323c58;
+    border-radius: 10px; 
+  }
+
+
+
+/*-----------------------------------------------responsive--------------------------*/
+@media only screen and (max-width: 480px) {
+    .gradientAlfa{
+        bottom: 8rem;
+    }
+
+    #setionWork{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerWorksDesktop{
+        width: 100%;
+        height: 20rem;
+        border-radius: 24px;
+    }
+    .containerWorksDesktop img{
+        transform: scale(0.6);
+        top: -1.5rem;
+        left: -9rem;
+    }
+
+    .containerWorksMobile{
+        width: 80%;
+        height: 25rem;
+        border-radius: 24px;
+        margin-top: 3rem;
+    }
+    .containerWorksMobile .mobileUi{
+        transform: scale(0.8);
+        top: 3rem;
+        left: 0;
+        right: 0;
+    }
+
+    .contornoPhone{
+        transform: scale(0.3) !important;
+        left: -19rem !important;
+        top: -27.5rem !important;
+    }
+
+    .textWork{
+        right: 0.8rem;
+        top: 0.5rem;
+    }
+    
+    #setionWork{
+        padding: 10rem 1rem;
+    }
+    #ContainerTitle h1 {
+        font-size: 35px;
+      }
+    
+    #ContainerTitle{
+        font-size: 20px;
+        padding: 2rem;
+    }
+}
+

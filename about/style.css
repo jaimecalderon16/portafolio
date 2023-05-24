@@ -1,0 +1,360 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000B38;
+}
+
+body, html {
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    /* Estilo para la barra de scroll en Firefox */
+    scrollbar-color: #323c58 transparent; /* Color de la barra de scroll */
+    scrollbar-width: thin; 
+}
+
+.flex{
+    display: flex;
+    column-gap: 0.5rem;
+} 
+
+.items-Center{
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.site{
+    padding: 8rem 0rem;
+    margin: 0 auto;
+}
+
+.ContainerPrincipal{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.site .header-site svg{
+    max-width: 1.4rem;
+}
+
+.header-site{
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+.header-content{
+    margin: 0 auto;
+    position: relative;
+    padding: 3rem 1rem;
+    width: 65%;
+}
+
+.ContainerPhotoPerfil{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ContainerPhotoPerfil picture{
+    position: absolute;
+    top: -4rem;
+    left: 0;
+}
+
+.PhotoPerfil{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: #ffffff solid 4px ;
+}
+
+.buttonFollow{
+    color: #ffffff;
+    border: #E42602 solid 0.3rem;
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    background-color: #E42602;
+    padding: 0.3rem 0.8rem;
+    border-radius: 9999px;
+    column-gap:0.4rem;
+}
+
+.buttonFollow:hover{
+     border: #ffffff solid 0.3rem;
+}
+
+.buttonFollow img{
+    width: 1.5rem;
+}
+
+.ContainerInformationPersonal{
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+}
+
+.informacionPersonal{
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.informacionPersonal svg{
+    fill: #38a3a4;
+    width: 3rem;
+}
+
+/*-----------------------------------about me-----------------------------------*/
+.containerAbout{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+
+.containerAbout p{
+    width: 100%;
+    font-family: "Mukta", sans-serif;
+    font-size: 1.2em;
+}
+
+.containerAbout h2{
+    width: 7rem;
+    border-bottom: #E42602 4px solid;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.ilike h2{
+    width: 3.5rem;
+}
+
+.ilike h2 span i{
+    margin-left: 8px;
+    color: #df212b;
+    user-select: none;
+}
+
+/*---------------------------------------baners icons FontAwesome-------------------*/
+
+.sectionBaner{
+    display: flex;
+    height: 13rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #111;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    top: -120%;
+    white-space: nowrap;
+    display: flex;
+    padding: 10px 0;
+    font-size: 3vw;
+    transform: rotate(-30deg);
+    left: 0;
+}
+
+.sectionBaner i{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 2px 5px;
+    user-select: none;
+    cursor: default;
+}
+
+.sectionBaner i:hover{
+    transition: 0s;
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
+
+.row div{
+    font-size: 1em;
+    padding-right: 16px;
+    animation: animateIcons1 60s linear infinite;
+    animation-delay: -60s;
+}
+
+.row div:nth-child(2){
+    animation: animateIcons2 60s linear infinite;
+    animation-delay: -30s;
+}
+
+@keyframes animateIcons1 {
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+
+@keyframes animateIcons2 {
+    0%{
+        transform: translate(0%);
+    }
+    100%{
+        transform: translate(-196%);
+    }
+}
+
+.row:nth-child(even) div{
+    
+    animation: animateIcons3 80s linear infinite;
+    animation-delay: -80s;
+}
+
+.row:nth-child(even) div:nth-child(2){
+    animation: animateIcons4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animateIcons3 {
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+}
+
+@keyframes animateIcons4 {
+    0%{
+        transform: translate(-196%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+/*-------------------------------------------------------scroll Stily------------------*/
+
+/* Estilo para la barra de scroll en Webkit (Safari y Chrome) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Estilo para el botón en la barra de scroll en Webkit */
+  ::-webkit-scrollbar-thumb {
+    background-color: #323c58;
+    border-radius: 10px; 
+  }
+
+
+  /*---------------------------------responcive-----------------*/
+  @media only screen and (max-width: 480px) {
+
+    .svg-menu {
+        text-align: center !important;
+    }
+    h1{
+        font-size: 1.78em;
+    }
+    .ContainerPrincipal{
+        width: 100%;
+    }
+    .header-site{
+        width: 100%;
+    }
+
+    .header-content{
+        padding: 1rem 0;
+        width: 75%;
+    }
+
+    .PhotoPerfil{
+        width: 55%;
+        height: 55%;
+    }
+
+    .buttonFollow{
+        padding: 0.1rem 0.1rem;
+    }
+
+    .containerAbout {
+        width: 80%;
+    }
+
+    .ContainerInformationPersonal{
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    /*---------------------------------------baners icons FontAwesome-------------------*/
+
+    .sectionBaner{
+        height: 11rem;
+    }
+
+    .row div{
+        font-size: 2.5em;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px ) {
+    .svg-menu {
+        text-align: center !important;
+    }
+
+    .ContainerPrincipal{
+        width: 90%;
+    }
+    .header-site{
+        width: 90%;
+    }
+
+    .header-content{
+        padding: 2rem 0;
+        width: 75%;
+    }
+
+    .PhotoPerfil{
+        width: 55%;
+        height: 55%;
+    }
+
+    .containerAbout {
+        width: 70%;
+    }
+
+    .ContainerInformationPersonal{
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    /*---------------------------------------baners icons FontAwesome-------------------*/
+
+    .sectionBaner{
+        height: 11rem;
+    }
+
+    .row div{
+        font-size: 1.8em;
+    }
+  }

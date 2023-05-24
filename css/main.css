@@ -1,0 +1,199 @@
+header {
+  user-select: none;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 1em 3em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  color: #21ffe2;
+  font-family: "Mukta", sans-serif;
+}
+
+a:hover {
+  color: rgb(255, 253, 198);
+}
+
+.nav-space {
+  width: 100px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.svg-menu {
+  z-index: 105;
+  max-width: 37px;
+  position: fixed;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 4px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#svg-menu-elemt {
+  fill: none;
+  stroke: #000B38;
+  stroke-linecap: round;
+}
+
+#svg-menu-elemt:hover {
+  stroke: rgb(255, 253, 198);
+}
+
+.lihg-color {
+  stroke: rgb(255, 253, 198) !important;
+}
+
+.sprite-menu-drip {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  width: 136px;
+  height: 141px;
+  background-image: url(../images/sprite-menu-drip.png);
+  animation: drip 5s steps(66) infinite;
+}
+
+nav {
+  display: block;
+  margin: 1rem;
+  color: #21ffe2;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+.backgraund-top {
+  user-select: none;
+  z-index: 140;
+  position: absolute;
+  background-image: url("../images/backgraund-top.svg");
+  background-size: auto 100%;
+  background-repeat: none;
+  top: -747px;
+  left: 0;
+  width: 100%;
+  height: 750px;
+}
+
+.menu-full-page {
+  z-index: 104;
+  position: fixed;
+  background-image: url("../images/2Mesa de trabajo 1.svg");
+  background-size: auto 100%;
+  background-repeat: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 195%;
+  visibility: hidden;
+  transition: visibility 1s;
+}
+.menu-full-page ul {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 70%;
+  top: 5%;
+  text-align: center;
+  padding: 0;
+  z-index: 102;
+  font-family: "Varela Round", sans-serif;
+}
+.menu-full-page ul li {
+  list-style: none;
+  color: rgb(255, 253, 198);
+  font-size: 45px;
+  font-weight: 600;
+  margin: 4rem;
+  overflow: hidden;
+}
+.menu-full-page ul li a {
+  display: inline-block;
+  color: rgb(255, 253, 198);
+  text-decoration: none;
+}
+.menu-full-page ul li a:hover {
+  color: rgb(255, 238, 110);
+  font-size: 48px;
+}
+
+.fullPage-nav {
+  z-index: 106;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  margin: 0;
+  padding: 1rem;
+  padding-right: 0;
+  visibility: hidden;
+}
+.fullPage-nav ul {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+}
+.fullPage-nav ul li {
+  margin: 1.5rem;
+  list-style: none;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+}
+.fullPage-nav ul li a {
+  color: rgb(255, 253, 198);
+  text-decoration: none;
+}
+.fullPage-nav ul li a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.copy-right {
+  position: absolute;
+  color: rgb(255, 253, 198);
+  right: 0.8rem;
+  bottom: -3px;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+.container-ul {
+  text-align: center;
+}
+.container-ul li {
+  color: #21FFE2;
+  font-size: 20px;
+  display: inline-block;
+}
+
+@keyframes drip {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -8976px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

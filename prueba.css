@@ -1,0 +1,111 @@
+#site-inactive{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 200;
+  width: 100%;
+  height: 100vh;
+  transition: all ease 1s;
+  transition-delay: 1s;
+}
+
+.background-dark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000b38;
+}
+
+.div-hello{
+  position: absolute;
+  top: 0%;
+  left: 1%;
+}
+
+.div-jaime{
+  position: absolute;
+  top: 6rem;
+  left: 25rem;
+}
+
+.div-iam{
+  position: absolute;
+  left: 9.5rem;
+  top: 15rem;
+}
+
+.text-jaime{
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: animate 7s linear forwards;
+}
+
+.text-hello{
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: animate 10s linear forwards;
+}
+
+.text-iam {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: animate 6s linear forwards;
+} 
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .social-icon {
+    transform: scale(1.3);
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: initial;
+    align-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: scale(1);
+  }
+
+   .social-icon svg {
+      overflow: visible ;
+    } 
+    
+   .si-circle {
+      fill: #616161;
+    }
+    
+   .si-splash, .si-grid{
+      display: none;
+      visibility:hidden;
+    } 
+
+    .si-icon {
+      margin: 0 auto;
+      transform-origin: "center center" ;
+    }
+
+    .tranform-icon{
+        translate: 25px 25px;
+    }
+    
+
+  

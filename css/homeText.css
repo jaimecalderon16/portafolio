@@ -1,0 +1,143 @@
+.home-text {
+  z-index: 0;
+  display: block;
+  position: relative;
+}
+
+.section-view p {
+  padding: 0 20px 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-parrafo-1 {
+  font-family: "Mukta", sans-serif;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+h2 {
+  color: #21FFE2;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-parrafo-2 {
+  font-family: "Mukta", sans-serif;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+#footer {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  background-color: #152569;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer h3 {
+  font-size: 23px;
+  margin: 1em 0 0.5em 0;
+  padding: 0;
+}
+
+footer a {
+  color: #21ffe2;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-container {
+  position: relative;
+  max-width: 50em;
+  margin: 0 auto;
+  margin-top: 0px;
+  padding: 0 1.6875em;
+  z-index: 10;
+  margin-top: 120px;
+}
+
+.footer-tab {
+  float: left;
+  width: 33.33%;
+}
+
+.container-iconos {
+  padding-top: 8px;
+}
+.container-iconos a {
+  margin: 0 auto;
+  z-index: 11;
+  padding: 0 8px;
+}
+.container-iconos a:hover .svg-icon {
+  width: 35px;
+  height: 35px;
+}
+.container-iconos a:hover .svg-iconos-g {
+  fill: #21FFE2;
+}
+
+.location {
+  text-align: left;
+}
+.location p {
+  margin-top: 0px;
+}
+
+.contact {
+  text-align: left;
+}
+.contact a {
+  width: 100%;
+  font-size: 15px;
+  padding: 3px;
+}
+
+.location-country {
+  width: 100%;
+  font-weight: 600;
+  color: #080e27;
+}
+
+.location-locality {
+  width: 100%;
+  color: #0f1430;
+  font-weight: 400;
+}
+
+.gatoMano {
+  background-image: url("../images/manosGato.png");
+  transform: scale(0.95);
+  background-repeat: no-repeat;
+  z-index: 10;
+  width: 85%;
+  height: 82%;
+  position: absolute;
+  left: 12%;
+  top: -3%;
+}
+
+.footer-background {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 100%;
+  height: 200px;
+  background-position: center top;
+}
+
+.footer-background.one {
+  background-image: url("../images/footer-bg-small-01.png");
+  background-repeat: repeat-x;
+}
+
+.footer-bg {
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: repeat-x;
+}
+
+/*# sourceMappingURL=homeText.css.map */

@@ -1,0 +1,72 @@
+
+/*     Importing Google fonts    */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* Applying CSS to sphere */
+.tagcloud {
+display: inline-block;
+top: 100px;
+left: 32%;
+font-weight: bold;
+letter-spacing: 1px;
+font-family: 'Bebas Neue', cursive;
+font-size: 20px;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item:hover {
+color: #FFC300 ;
+}
+.text-zone {
+    width: 40%;
+}
+
+.containerMyCanvas{
+    padding: 1rem;
+    width: 60%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.tagcloud{
+    position: initial !important;
+    width: 90% !important;
+}
+
+.myCanvas{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+   color: antiquewhite; 
+}
+
+.section-home {
+    height: 90vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+/*---------------------------responci TgClouds*/
+@media only screen and (max-width: 1024px) {
+    .containerMyCanvas {
+      transform: scale(calc(1 - ((100vw - 320px) / (1024 - 320) * (1 - 0.7))));
+    }
+  }

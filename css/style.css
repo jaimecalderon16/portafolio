@@ -1,0 +1,286 @@
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000B38;
+}
+
+body, html {
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    /* Estilo para la barra de scroll en Firefox */
+    scrollbar-color: #323c58 transparent; /* Color de la barra de scroll */
+    scrollbar-width: thin; 
+}
+
+/* Estilo para la barra de scroll en Webkit (Safari y Chrome) */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de scroll */
+  }
+  
+  /* Estilo para el botón en la barra de scroll en Webkit */
+  ::-webkit-scrollbar-thumb {
+    background-color: #323c58; /* Color de la barra de scroll */
+    border-radius: 10px; /* Radio de los bordes */
+  }
+
+  
+  
+
+#wrapper {
+    overflow: hidden;
+}
+
+.noselect {
+    user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+}
+
+.section-view {
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+    display: none;
+    margin: 0 auto;
+}
+
+.section-view.active {
+    display: block;
+    visibility: visible;
+}
+
+#scene{
+    transform: translate3d(0px, 0px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+#scene {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    top: -100px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #000B38;
+    pointer-events: none;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.layer{
+    transform-style: preserve-3d; 
+    backface-visibility: hidden;
+}
+
+
+
+.background {
+    background-color: #152569;
+    position: absolute;
+    top: 100px;
+    width: 2300px;
+    left: 50%;
+    margin-left: -1150px;
+    height: 500px;
+}
+
+.jungle{
+    background: transparent no-repeat;
+    position: absolute;
+    top: 0px;
+    width: 2800px;
+    height: 884px;
+    left: 50%;
+    margin-left: -1400px;
+}
+
+.bg {
+    transform: scale(1, 1);
+    transition: transform 200ms ease;
+}
+
+.jungle.bg {
+    background-image: url(../images/bg.svg);
+    
+}
+
+
+
+.fireflies {
+    background: transparent;
+    position: absolute;
+    display: block;
+    visibility: visible;
+    width: 1920px;
+    height: 800px;
+    top: 0px;
+    left: 50%;
+    margin-left: -960px;
+    transform-origin: 50% 10%;
+}
+
+.vines.bg {
+    background-image: url(../images/bg_vines.svg);
+}
+
+.vines {
+    background: transparent no-repeat;
+    position: absolute;
+    width: 2800px;
+    height: 884px;
+    left: 50%;
+    margin-left: -1400px;
+    top: 0px;
+    }
+
+    /*--------------------animation developer---------------------*/
+
+    .sprite.lampara{
+        position: absolute;
+        left: 68%;
+        top: 140px;
+        width: 350px;
+        height: 420px;
+        cursor: pointer;
+        background-image: url(../images/lamparaMejorada.png);
+         animation: ape_lamp 2.9s steps(1) infinite; 
+         transform: scale(0.6, 0.6);
+    }
+
+    .sprite.lampara{
+        pointer-events: auto;
+    }
+
+    .sprite.lampara.active {
+        animation: lamp_active 1.2s steps(18) forwards !important;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-direction: forwards;
+    }
+
+    .sprite.programador{
+        position: absolute;
+        left: 45%;
+        top: 300px;
+        width: 972px;
+        height: 596px;
+        background-image: url(../images/000.png);
+         animation: ape_dev 2.9s steps(27) infinite; 
+         transform: scale(0.5, 0.5);
+    }
+
+    /*---------------movemnt of light and selva--------*/
+
+    .fireflies.ff-fg {
+        background-image: url(../images/fireflies-fg.png);
+        animation: fireflies_front 12s ease-in-out infinite;
+    }
+
+    .fireflies.ff-bg {
+        background-image: url(../images/fireflies-bg.png);
+        animation: fireflies_back 12s -2s ease-in-out infinite reverse;
+    }
+
+    .jungle.mg {
+        background-image: url(../images/mg.svg);
+    }
+
+    .vines.mg {
+        background-image: url(../images/mg_vines.svg);
+    }
+
+    .vines.fg {
+        background-image: url(../images/fg_vines.svg);
+    }
+
+    .jungle.fg {
+        background-image: url(../images/fg.svg);
+    }
+
+    @keyframes ape_dev {
+
+        0% {
+            background-position: 0px;
+            
+        }
+        
+        100% {
+            background-position: -28809px;
+        }
+    }
+
+    @keyframes ape_lamp {
+
+        0% {
+            background-position: 0px;
+            
+        }
+        
+        100% {
+            background-position: -300px;
+        }
+    }
+
+@keyframes fireflies_back{
+    0% {
+        transform: rotate(3deg);
+        
+    }
+    
+    50% {
+        transform: translate(0px, -30px) rotate(-3deg);
+    }
+    
+    100% {
+        transform: translate(0px, 0px) rotate(3deg);
+    }
+    }
+@keyframes fireflies_front{
+    0% {
+        transform: rotate(-3deg);
+    }
+    
+    50% {
+        transform: translate(0px, -30px) rotate(3deg);
+    }
+    
+    100% {
+        transform: translate(0px, 0px) rotate(-3deg);
+    }
+}
+
+
+
+
+@keyframes lamp_active{
+0% {
+    background-position: -300px;
+}
+
+100% {
+    background-position: -5700px;
+}
+}

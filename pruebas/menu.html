@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pruebaMenu.css">
+</head>
+
+<body>
+    <div class="svg-menu menu-icon-wrapper scaled ">
+
+        <svg class="br-1" id="svg-menu-elemt" width="42" height="42" viewBox="0 0 12 10">
+            <path class="bar-1" d="M10,2 L2,2"></path>
+            <path class="bar-2" d="M2,4.5 L10,4.5"></path>
+            <path class="bar-3" d="M10,7 L2,7"></path>
+        </svg>
+    </div>
+
+    <header id="header">
+        <div id="fixed-nav-bg">
+            <div class="sprite-menu-drip"></div>
+            </div>
+        
+        </div>
+        <nav>
+            <ul class="container-ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">Work</a></li>
+                <li class="nav-space"></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contact</a></li>
+
+                <div class="container-sound">
+                    <div class="Sound-mute">
+                        <img class="Sound-mute-image" src="../images/iconMute.png" alt="">
+                    </div>
+                    <div id="Sound-bars" data-visibility= "hidden" >
+                        <div class="column column-1"></div>
+                        <div class="column column-2"></div>
+                        <div class="column column-3"></div>
+                        <div class="column column-4"></div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="overlay " id="overlay" style="top: 0px;">
+        <div class="overlay-top"></div>
+        <nav class="overlay-menu">
+            <ul class="ul-full-page">
+                <li  class="li-a"><a href="/">HOME</a></li>
+                <li class="li-a"><a href="/work">WORK</a></li>
+                <li class="li-a"><a href="/careers">CAREERS</a></li>
+                <li class="li-a"><a href="/contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav class="fullPage-nav">
+        <ul>
+            <li><a href="">Currículum</a></li>
+            <li><a href="">Linkedin</a></li>
+            <li> <a href="">jaimebc.yt@gmail.com</a> </li>
+            <li class="copy-right">©2023</li>
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="./pruebaMenu.js"></script>
+
+</body>
+
+</html>
