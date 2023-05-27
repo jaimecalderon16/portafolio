@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    background-color: #000B38;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    user-select: none;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#svg-menu-elemt{
+    stroke: #000B38;
+}
+
+#fixed-nav-bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.sprite-menu-drip {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 136px;
+    height: 141px;
+    background-image: url(../images/sprite-menu-drip.png);
+    animation: drip 5s steps(66) infinite;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 1em 3em;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #21ffe2;
+    font-family: 'Mukta', sans-serif;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.nav-space{
+    width: 100px;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    
+}
+
+.container-ul{
+    
+    text-align: center;
+}
+.container-ul li{
+        color: #21FFE2;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+
+.menu-icon-wrapper .menu-icon-trigger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lihg-color{
+    stroke: #fff !important;
+}
+
+.menu-icon-wrapper {
+    position: fixed;
+    margin-left: -16px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: 110;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.menu-icon-wrapper svg {
+    position: absolute;
+    transform-origin: 0 0;
+}
+
+.overlay {
+    user-select: none;
+    z-index: 101;
+    position: fixed;
+    background-image: url(https://www.animalmade.com/files/css/../images/svg/menu-fs-bg.svg);
+    background-size: auto 100%;
+    background-repeat: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    visibility: hidden;
+    transition: visibility 0.8s;
+}
+
+.overlay-top {
+    user-select: none;
+    z-index: 100;
+    position: absolute;
+    background-image: url(https://www.animalmade.com/files/css/../images/svg/menu-fs-top.svg);
+    background-size: auto 100%;
+    background-repeat: none;
+    top: -495px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+
+.overlay nav {
+    position: relative;
+    z-index: 200;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(70% / 4);
+    min-height: 50px;
+    position: relative;
+
+}
+
+.overlay.open {
+    visibility: visible;
+}
+
+.fullPage-nav {
+    z-index: 106;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    margin: 0;
+    padding: 1rem;
+    padding-right: 0;
+    visibility: hidden;
+}
+
+.fullPage-nav ul {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+}
+
+.fullPage-nav ul li {
+    margin: 1.5rem;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.fullPage-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.overlay-menu ul{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: 70%;
+    top: 5%;
+    text-align: center;
+    padding: 0;
+    z-index: 102; 
+    font-family: 'Varela Round', sans-serif;}
+
+.overlay-menu ul li{
+    list-style: none;
+            color: #fff;
+            font-size: 45px;
+            font-weight: 600;
+            margin: 2rem;
+            overflow: hidden;
+}
+
+.overlay-menu ul li a{
+    display: inline-block;
+            color: #fff;
+            text-decoration: none;
+}
+
+.overlay-menu ul li a:hover {
+    color: rgb(255, 238, 110);
+    font-size: 48px;
+}
+
+.copy-right{
+    position: absolute;
+    color: #fff;
+    right: 0.8rem;
+    bottom: -3px;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+
+@keyframes drip{
+
+    0% {
+        background-position: 0px;
+    }
+    
+    100% {
+        background-position: -8976px;
+    }
+}
