@@ -240,7 +240,11 @@ p {
     #setionWork{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+
+    }
+
+    .containerWorks{
+        flex-direction: column;
     }
 
     .containerWorksDesktop{
@@ -258,7 +262,7 @@ p {
         width: 80%;
         height: 25rem;
         border-radius: 24px;
-        margin-top: 3rem;
+        margin: 3rem auto;
     }
     .containerWorksMobile .mobileUi{
         transform: scale(0.8);
